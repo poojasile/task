@@ -177,6 +177,52 @@ Current number 8, Previous Number 7 is 15
 
 Current number 9, Previous Number 8 is 17
 
+# Live Video capture 
+
+This script is to capture Live video from the webcam.
+
+## Installation
+
+Install OpenCV: If you haven't already, install the OpenCV library using pip.
+
+     pip install opencv-python
+
+## Usage
+
+define a video capture object 
+vid = cv2.VideoCapture(0) 
+
+Install required packages
+
+     pip install -r requirements.txt
+
+## Code Explaination
+
+1.Creating Video Capture Object:
+
+ The script creates a video capture object using cv2.VideoCapture(0) which captures video from the default camera (index 0).
+
+2.Capturing and Displaying Frames:
+
+It enters a while loop where it continuously captures frames from the video feed using vid.read() and displays them using cv2.imshow().
+
+3.Quitting the Application:
+
+The loop breaks when the 'q' key is pressed. You can change the quitting key by modifying the condition if cv2.waitKey(1) & 0xFF == ord('q'):.
+
+4.Releasing Resources:
+
+After the loop, it releases the video capture object using vid.release() and destroys all OpenCV windows using cv2.destroyAllWindows().
+
+## Example
+
+
+
+
+
+
+
+
 
 
   
