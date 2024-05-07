@@ -5,12 +5,12 @@
    ```csv,PIL```
    
   2.CODE
-  ```bash
+```bash
 import os
 import csv
 from PIL import Image, ImageDraw
 
-#Defining paths forcsv file,image directory,and output directory
+
 csv_file = "/home/pooja-sile/Downloads/7622202030987_bounding_box.csv"
 image_dir = "/home/pooja-sile/Downloads/7622202030987"
 output_dir = "/home/pooja-sile/Downloads/7622202030987_with_bounding_boxes"
@@ -55,4 +55,4 @@ with open(csv_file, 'r') as file:
             cropped_img.save(os.path.join(output_dir, f"{i}_{image_name}"))  
         full_image_with_boxes = draw_boxes(image, boxes)
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
-     '''
+```
