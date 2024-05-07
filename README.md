@@ -1,4 +1,4 @@
 # task
-This is my first GIt Repositary
+This is my first Git Repositary
 <br>
 Author-Pooja Sile
