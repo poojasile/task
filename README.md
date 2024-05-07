@@ -1,13 +1,13 @@
-## Image Bounding Box Processor
+# Image Bounding Box Processor
 
-This script processes images by drawing bounding boxes around objects specified in a CSV file containing bounding box coordinates. 
-It also crops the images based on these bounding boxes.
+   This script processes images by drawing bounding boxes around objects specified in a CSV file containing bounding box coordinates. 
+   It also crops the images based on these bounding boxes.
 
 ## Installation
 
-Make sure you have Python installed on your system. Additionally, install the required Python libraries by running pip:
+  Make sure you have Python installed on your system. Additionally, install the required Python libraries by running pip:
 
-  pip install pillow
+    pip install pillow
 
 ## Usage
 
@@ -17,7 +17,7 @@ Make sure you have Python installed on your system. Additionally, install the re
 
 3.Install required packages
 
-   pip install -r requirements.txt
+     pip install -r requirements.txt
 
 ## Code Explaination
 
@@ -54,6 +54,66 @@ The script performs the following steps:
 ### Bounding Box
 
   ![image](https://github.com/poojasile/task/assets/169047585/b06e8e78-7c98-478c-a4cd-7a1e9fdba215)
+
+
+
+
+  # Histogram Plotter
+
+  A histogram is a type of chart that shows the frequency distribution of data points across a continuous range of numerical values.
+  This script reads an image file, computes the histogram for each color channel (blue, green, red), and visualizes the histograms using Matplotlib
+
+  ## Installation
+  
+    Install Numpy,Opencv,and Matplotlib using pip:
+    
+     pip install numpy opencv-python matplotlib
+
+  ## Usage
+  
+  1.provide the path to the input image as an argument
+    
+  2.The script will generate a histogram plot for each color channel and display it.
+
+  ## Code Explaination
+
+  The script performs the following steps:
+
+  1.Importing Libraries:
+  
+  It imports necessary libraries including numpy, cv2 (OpenCV), and matplotlib for numerical operations, image processing, and plotting respectively.
+
+  2.Reading and Writing Image:
+  
+  It reads the input image using OpenCV's cv.imread() function.
+  If the image is successfully read, it writes it to a new location using cv.imwrite().
+  It checks if the image is not None, otherwise raises an assertion error.
+
+  3.Calculating Histogram and Plotting:
+  
+  It calculates the histogram for each color channel (BGR) using OpenCV's cv.calcHist() function.
+  It plots the histograms using Matplotlib's plt.plot() function.
+
+  4.Displaying the Plot:
+     
+  It displays the plot showing histograms for each color channel.
+
+  ## Example
+
+  ### Input
+  
+   ![image](https://github.com/poojasile/task/assets/169047585/0336e039-7838-475f-aab1-d55a9ca0af8a)
+
+  ### Output
+
+   ![image](https://github.com/poojasile/task/assets/169047585/011459bc-e119-4620-a4e9-7cf9fc920b66)
+
+
+
+  
+  
+
+  
 
 
 
