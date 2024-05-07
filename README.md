@@ -47,13 +47,19 @@ The script performs the following steps:
    
 ## Example
 
- ### Crop Image
+ ### Crop Image:
  
   ![image](https://github.com/poojasile/task/assets/169047585/42e726f4-868f-4b80-9895-52e3f068e98a)
 
-### Bounding Box
+### Bounding Box:
 
   ![image](https://github.com/poojasile/task/assets/169047585/b06e8e78-7c98-478c-a4cd-7a1e9fdba215)
+
+
+
+
+
+
 
 
 
@@ -74,6 +80,10 @@ The script performs the following steps:
   1.provide the path to the input image as an argument
     
   2.The script will generate a histogram plot for each color channel and display it.
+
+  3.Install required packages
+
+     pip install -r requirements.txt
 
   ## Code Explaination
 
@@ -100,19 +110,77 @@ The script performs the following steps:
 
   ## Example
 
-  ### Input
+  ### Input:
   
    ![image](https://github.com/poojasile/task/assets/169047585/0336e039-7838-475f-aab1-d55a9ca0af8a)
 
-  ### Output
+  ### Output:
 
    ![image](https://github.com/poojasile/task/assets/169047585/011459bc-e119-4620-a4e9-7cf9fc920b66)
 
 
 
-  
-  
 
+
+
+
+
+# Iteration
+
+ Iterating the first 10 numbers and in each iteration printing the sum of the current and previous number.
+
+## Usage
+
+The script will print the current number, its previous number, and the sum of the two for each number in the range
+
+## Code Explaination
+
+The script performs the following steps:
+
+1.Initialization:
+
+It initializes the variable previous_num to 0.
+
+2.Looping through Range:
+
+It iterates through a range from 0 to 9.
+
+3.Calculating Sum:
+
+For each iteration, it calculates the sum of the current number with its previous number.
+
+4.Printing Results:
+
+It prints the current number, its previous number, and the sum.
+
+## Example 
+
+ ### Output:
+ 
+Current number 0, Previous Number 0 is 0
+
+Current number 1, Previous Number 0 is 1
+
+Current number 2, Previous Number 1 is 3
+
+Current number 3, Previous Number 2 is 5
+
+Current number 4, Previous Number 3 is 7
+
+Current number 5, Previous Number 4 is 9
+
+Current number 6, Previous Number 5 is 11
+
+Current number 7, Previous Number 6 is 13
+
+Current number 8, Previous Number 7 is 15
+
+Current number 9, Previous Number 8 is 17
+
+
+
+  
+  
   
 
 
