@@ -7,12 +7,14 @@ It also crops the images based on these bounding boxes.
 
 Make sure you have Python installed on your system. Additionally, install the required Python libraries by running pip:
 
-pip install pillow
+  pip install pillow
 
 ## Usage
 
 1.Defining paths for csv file, image directory,and output directory
+
 2.os.makedirs is used to create a directory 
+
 3.Install required packages
 
    pip install -r requirements.txt
