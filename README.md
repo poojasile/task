@@ -81,6 +81,8 @@ plt.show()
 ```
 ## Iteration
 
+CODE
+
 ```
 previous_num = 0
 for i in range(10):
