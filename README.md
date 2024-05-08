@@ -216,6 +216,10 @@ After the loop, it releases the video capture object using vid.release() and des
 
 ## Example
 
+### Output
+
+   
+
 
 
 
