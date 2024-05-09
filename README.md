@@ -198,21 +198,19 @@ Install required packages
 
 ## Code Explaination
 
-1.Creating Video Capture Object:
+1.The code begins with importing the necessary modules. cv2 is imported for OpenCV functionalities, and mimetypes is imported for MIME type handling.
+
+2.Creating Video Capture Object:
 
  The script creates a video capture object using cv2.VideoCapture(0) which captures video from the default camera (index 0).
 
-2.Capturing and Displaying Frames:
+3.This block checks if the camera is opened successfully. If the camera fails to open, it prints an error message.The code retrieves the frame width and height from the camera and converts them from floating-point values to integers. These values are used to set the resolution of the captured video.
 
-It enters a while loop where it continuously captures frames from the video feed using vid.read() and displays them using cv2.imshow().
+4.cv2.VideoWriter() initializes a VideoWriter object to write the video frames to a file. It takes the filename (pooja.avi), video codec (FourCC code MJPG), frames per second (fps), and frame size (size) as arguments.
 
-3.Quitting the Application:
+5.This loop continuously captures frames from the camera (video.read()), writes them to the output video file (result.write(frame)), and displays them in a window (cv2.imshow('Frame', frame)). It continues until the user presses the 's' key, which breaks the loop and stops the recording.
 
-The loop breaks when the 'q' key is pressed. You can change the quitting key by modifying the condition if cv2.waitKey(1) & 0xFF == ord('q'):.
-
-4.Releasing Resources:
-
-After the loop, it releases the video capture object using vid.release() and destroys all OpenCV windows using cv2.destroyAllWindows().
+6.After the recording is stopped, the resources are released (video.release() and result.release()), and all OpenCV windows are closed (cv2.destroyAllWindows()). Finally, a message is printed indicating that the video was successfully saved.
 
 ## Example
 
