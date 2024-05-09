@@ -218,7 +218,7 @@ After the loop, it releases the video capture object using vid.release() and des
 
 ### Output
 
-https://github.com/poojasile/task/assets/169047585/13e89eaa-755e-4dfe-bb9e-7ada51341310
+  https://github.com/poojasile/task/assets/169047585/5242d129-26ca-46c5-8d0d-2c9120272069
 
 
    
