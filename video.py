@@ -1,23 +1,64 @@
-# define a video capture object 
-import cv2
-vid = cv2.VideoCapture(0) 
-  
+# Python program to save a 
+# video using OpenCV 
+
+
+import cv2 
+import mimetypes
+print(mimetypes.guess_type("sample.html"))
+
+
+# Create an object to read 
+# from camera 
+video = cv2.VideoCapture(0) 
+
+# We need to check if camera 
+# is opened previously or not 
+if (video.isOpened() == False): 
+	print("Error reading video file") 
+
+# We need to set resolutions. 
+# so, convert them from float to integer. 
+frame_width = int(video.get(3)) 
+frame_height = int(video.get(4)) 
+
+size = (frame_width, frame_height) 
+
+# Below VideoWriter object will create 
+# a frame of above defined The output 
+# is stored in 'filename.avi' file. 
+result = cv2.VideoWriter('pooja.avi', 
+						cv2.VideoWriter_fourcc(*'MJPG'), 
+						10, size) 
+	
 while(True): 
-      
-    # Capture the video frame 
-    # by frame 
-    ret, frame = vid.read() 
-  
-    # Display the resulting frame 
-    cv2.imshow('frame', frame) 
-      
-    # the 'q' button is set as the 
-    # quitting button you may use any 
-    # desired button of your choice 
-    if cv2.waitKey(1) & 0xFF == ord('q'): 
-        break
-  
-# After the loop release the cap object 
-vid.release() 
-# Destroy all the windows 
-cv2.destroyAllWindows()
+	ret, frame = video.read() 
+
+	if ret == True: 
+
+		# Write the frame into the 
+		# file 'filename.avi' 
+		result.write(frame) 
+
+		# Display the frame 
+		# saved in the file 
+		cv2.imshow('Frame', frame) 
+
+		# Press S on keyboard 
+		# to stop the process 
+		if cv2.waitKey(1) & 0xFF == ord('s'): 
+			break
+
+	# Break the loop 
+	else: 
+		break
+
+# When everything done, release 
+# the video capture and video 
+# write objects 
+video.release() 
+result.release() 
+	
+# Closes all the frames 
+cv2.destroyAllWindows() 
+
+print("The video was successfully saved") 
