@@ -27,8 +27,7 @@ size = (frame_width, frame_height)
 # a frame of above defined The output 
 # is stored in 'filename.avi' file. 
 result = cv2.VideoWriter('pooja.avi', 
-						cv2.VideoWriter_fourcc(*'MJPG'), 
-						10, size) 
+            cv2.VideoWriter_fourcc(*'MJPG'), 10, size) 
 	
 while(True): 
 	ret, frame = video.read() 
