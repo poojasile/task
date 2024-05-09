@@ -218,7 +218,9 @@ After the loop, it releases the video capture object using vid.release() and des
 
 ### Output
 
-[Screencast from 08-05-24 12:14:40 PM IST.webm](https://github.com/poojasile/task/assets/169047585/2b02165c-7ab5-4a4a-aa33-d9e8c7a24663)
+https://github.com/poojasile/task/assets/169047585/13e89eaa-755e-4dfe-bb9e-7ada51341310
+
+
    
 
 
