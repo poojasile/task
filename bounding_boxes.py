@@ -1,11 +1,16 @@
 import os
 import csv
+import argparse
 from PIL import Image, ImageDraw
 
-#Defining paths forcsv file,image directory,and output directory
-csv_file = "/home/pooja-sile/Downloads/7622202030987_bounding_box.csv"
-image_dir = "/home/pooja-sile/Downloads/7622202030987"
-output_dir = "/home/pooja-sile/Downloads/7622202030987_with_bounding_boxes"
+parser = argparse.ArgumentParser()
+parser.add_argument("--image_path", help = "Enter the path of your image")
+parser.add_argument("--csv", help = "your csv file path , which has bounding box values")
+parser.add_argument("--out_dir", help = "name of output directory where you want to save your output")
+args = parser.parse_args()
+image_dir = args.image_path
+csv_file = args.csv
+output_dir = args.out_dir
 
 
 os.makedirs(output_dir, exist_ok=True)
